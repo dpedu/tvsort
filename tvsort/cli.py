@@ -108,10 +108,10 @@ def main():
         results.sort(key=lambda x: x.dest.dir)
         for item in results:
             row = [i,
-                   os.path.join(item.root, item.ep.file),
+                   item.ep.file,
                    item.ep.major,
                    item.ep.minor,
-                   os.path.join(item.dest.root, item.dest.dir, item.subdest) + "/",
+                   os.path.join(item.dest.dir, item.subdest) + "/",
                    item.score,
                    "soft" if args.soft else "hard"]
             tab_rows.append(row)

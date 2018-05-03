@@ -2,7 +2,7 @@
 from setuptools import setup
 
 setup(name='tvsort',
-      version='0.0.1',
+      version='0.0.2',
       description='CLI tool to sort tv shows into directories',
       url='http://gitlab.xmopx.net/dave/tvsort',
       author='dpedu',
